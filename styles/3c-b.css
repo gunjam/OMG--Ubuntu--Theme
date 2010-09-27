@@ -1,0 +1,31 @@
+/*
+LAYOUT: Three-Column
+DESCRIPTION: Three-column fluid layout with two sidebars on both sides of content
+*/
+
+#container {
+	float: left;
+	width: 100%;
+}
+#content {
+	margin: 0 200px;
+}
+#primary, #secondary {
+	float: left;
+	overflow: hidden;
+	width: 180px;
+}
+#primary {
+	margin: 0 0 0 -100%;
+}
+* html #primary {
+	left: 20px;
+	position: relative;
+}
+#secondary {
+	margin: 0 0 0 -180px;
+}
+#footer {
+	clear: left;
+	width: 100%;
+}

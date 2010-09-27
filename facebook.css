@@ -1,0 +1,98 @@
+/* =Facebook box stuff
+-------------------------------------------------------------- */
+html {
+	width: 300px;
+}
+.fan_box a:hover{
+	text-decoration: none;
+}
+.fan_box .full_widget{
+	height: 200px;
+	border: 0 !important;
+	background: none !important;
+	position: relative;
+}
+.fan_box .connect_top{
+	background: none !important;
+	padding: 0 !important;
+}
+.fan_box .profileimage, .fan_box .name_block{
+	display: none;
+}
+.fan_box .connect_action{
+	padding: 0 !important;
+}
+.fan_box .connections{
+	height: 300px;
+	padding: 0 !important;
+	border: 0 !important;
+	position: relative;
+	margin: 0 0 30px;
+	color:#FFF;
+}
+.fan_box .connections .connections_grid {
+	padding-top: 0 !important;
+	position: absolute;
+	top: 0;
+	background: #F15D22;
+}
+.fan_box .connections_grid .grid_item{
+	padding: 0 !important;
+	height: 50px;
+	opacity: 0.5;
+}
+.fan_box .connections_grid .grid_item .name{
+	display: none;
+}
+.fan_box .connect_widget{
+	margin: 0 !important;
+}
+.connect_widget_interactive_area {
+	position: absolute;
+	right: 0;
+	bottom: -128px;
+	z-index: 99;
+}
+.connections span.total:before {
+	content:"people like ";
+	font-size:40px;
+	position:relative;
+	top:135px;
+	display: block;
+	margin-top: -35px;
+	
+}
+.connections span.total:after {
+	content:" OMG! Ubuntu!";
+	font-size:30px;
+	position:relative;
+	top:35px;
+	display: block;
+}
+.connections span.total {
+	/*-moz-transform:rotate(-3deg);*/
+	display:block;
+	font-family:"Ubuntu","UbuntuBeta","Droid Sans","Arial",sans-serif;
+	font-weight: bold;
+	font-size:83px;
+	margin:0 auto;
+	position:absolute;
+	text-align:center;
+	text-shadow:1px 1px black;
+	top:40px;
+	z-index:50;
+	width: 300px;
+	/*background: url(images/cunt.png);*/
+}
+.connections span.total_plus {
+	-moz-transform:rotate(0deg);
+	background:#F15D22;
+	display:block !important;
+	height:1px;
+	margin:0 0 -300px;
+	opacity:0.5;
+	overflow:hidden;
+	padding-top:299px;
+	position:relative;
+	top: 0;
+}
