@@ -395,6 +395,7 @@ body {
 	background-position: 0 -86px;
 	-webkit-background-size: 1px 199px;
 	-moz-background-size: 1px 199px;
+	background-size: 1px 199px;
 }
 #header {
 	height: 113px;
