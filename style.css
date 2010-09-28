@@ -1,10 +1,10 @@
 /*   
 Theme Name: OMG! Ubuntu!
-Theme URI: http://omgubuntu.co.uk
+Theme URI: http://github.com/gunjam/OMG--Ubuntu--Theme
 Description: The official WordPress theme for omgubuntu.co.uk
 Author: Niall Molloy
 Author URI: http://purplejam.co.uk
-Version: 0.2
+Version: 1.4
 Tags: colours, exclamation marks, rant support
 .
 The Shape Theme for WordPress is copyright ThemeShapes http://themeshapes.com/
@@ -359,6 +359,10 @@ blockquote.right {
 	width: 33%;
 }
 
+
+/* Root
+-------------------------------------------------------------- */
+
 body {
 	margin: 0;
 }
@@ -375,11 +379,22 @@ body {
 	z-index: 1;
 }
 
+/* Sprites
+-------------------------------------------------------------- */
+#searchsubmit, div.cat-links a, div.tag-links a, .nav-previous a, .nav-next a, #copyright, #facemask {
+	background: url(images/sprites.png) no-repeat;
+}
+
+
 /* =Header
 -------------------------------------------------------------- */
-#header, #access, .menu-primary-menu-container .menu li {
+#header, .menu-primary-menu-container .menu li {
 	background: url(images/grads.png);
+	background: -moz-linear-gradient(top, #fff, #fff 22%, #fefefe 22%, #8e8e8e 43%, #7d2755 43%, #4d1f41 93.5%, #b4b3b3 93.5%, #f7f6f5 98%, #f7f6f5);
+	background: -webkit-gradient(linear,0 0,0 100%,color-stop(0, #FFFFFF),color-stop(0.22, #FFFFFF),color-stop(0.22, #FEFEFE),color-stop(0.43, #8E8E8E),color-stop(0.43, #7D2755),color-stop(0.935, #4D1f41),color-stop(0.935, #B4B3B3),color-stop(0.99, #F7F6F5),color-stop(1, #F7F6F5));
 	background-position: 0 -86px;
+	-webkit-background-size: 1px 199px;
+	-moz-background-size: 1px 199px;
 }
 #header {
 	height: 113px;
@@ -475,7 +490,8 @@ body {
 	font-size: 18px;
 }
 #searchsubmit {
-	background: url(images/search3.png) #666;
+	background-color: #666;
+	background-position: -223px 0;
 	border: none;
 	width: 32px;
 	height: 32px;
@@ -513,11 +529,11 @@ body {
 	text-transform:uppercase;
 	text-shadow: 0px 1px 0px #fff;
 }
-#menu-item-24 a {
+#menu-item-2733 a {
 	color: #dd4814;
 }
-.menu-secondary-menu-container a:hover, #menu-item-2733 a:hover {
-	color:#0091ab;
+#menu-item-2733 a:hover {
+	color: #0091ab;
 }
 
 /* =Post Ads
@@ -654,7 +670,7 @@ div.cat-links a {
 	text-align: center;
 	text-transform: uppercase;
 	color: #fff;
-	background: url(images/all_icons_small.png) no-repeat scroll 0 5px #898989;
+	background-color: #898989;
 	margin-bottom: 7px;
 	padding-top: 36px;
 	border-radius: 5px 0px 5px 0px;
@@ -664,41 +680,44 @@ div.cat-links a {
 div.cat-links a:hover {
 	background-color: #404448;
 }
+div.cat-links a.cat-app {
+	background-position: 17px -400px;
+}
 div.cat-links a.cat-review {
-	background-position: -60px 5px;
+	background-position: -163px 5px;
 }
 div.cat-links a.cat-editorial {
-	background-position: -120px 5px;
+	background-position: -99px -43px;
 }
 div.cat-links a.cat-news {
-	background-position: -180px 5px;
+	background-position: -39px -43px;
 }
 div.cat-links a.cat-video {
-	background-position: -240px 5px;
+	background-position: -103px -400px;
 }
 div.cat-links a.cat-breaking {
-	background-position: -300px 5px;
+	background-position: -43px -400px;
 }
 div.cat-links a.cat-download {
-	background-position: -360px 5px;
+	background-position: -103px 5px;
 }
 div.cat-links a.cat-howto {
-	background-position: -420px 5px;
+	background-position: -43px 5px;
 }
 div.cat-links a.cat-idea {
-	background-position: -480px 5px;
+	background-position: 16px 5px;
 }
 div.cat-links a.cat-interview {
-	background-position: -540px 5px;
+	background-position: 20px -43px;
 }
 div.cat-links a.cat-list {
-	background-position: -600px 5px;
+	background-position: -258px 5px;
 }
 div.cat-links a.cat-wallpaper {
-	background-position: -660px 5px;
+	background-position: -163px -400px;
 }
 div.cat-links a.cat-poll {
-	background-position: -720px 5px;
+	background-position: -223px -400px;
 }
 .tag-links {
 	border-bottom: 1px dotted #EFEFEF;
@@ -722,7 +741,7 @@ div.cat-links a.cat-poll {
 	background-color: #d8d8d8;
 }
 div.tag-links a {
-	background: url("images/tag_.png") no-repeat;
+	background-position: -290px -405px;
 	color: #666;
 	display: inline-block;
 	font-family: "Ubuntu", "UbuntuBeta", "Droid Sans", sans-serif;
@@ -900,14 +919,14 @@ div.tag-links a {
 	color: #b53e7e;
 }
 .nav-previous a, .nav-next a {
-	background: url(images/arrows.png) no-repeat 0 1px;
+	background-position: -245px -34px;
 	float: left;
 	height: 14px;
 	padding: 0 0 0 19px;
 	line-height: 12px;
 }
 .nav-next a {
-	background-position: right -13px;
+	background-position: -134px -34px;
 	float: right;
 	padding: 0 19px 0 0;
 }
@@ -970,7 +989,7 @@ div.tag-links a {
 -------------------------------------------------------------- */
 
 #footer {
-	background: #2A2C2E;
+	background: #2c2c2c;
 	color: #fff;
 	position: relative;
 	z-index: 0;
@@ -988,7 +1007,7 @@ div.tag-links a {
 	width: 920px;
 	height: 170px;
 	padding: 20px;
-	background: #2A2C2E;
+	background: #2c2c2c;
 	overflow: hidden;
 	margin: 0 auto;
 }
@@ -1002,7 +1021,7 @@ div.tag-links a {
 .menu-footer-menu-2-container {
 	font-size: 11px;
 	float: right;
-	margin: 0 0 40px;
+	margin: 0 0 47px;
 }
 #menu-footer-menu-2 a {
 	border-right: 1px solid #FFFFFF;
@@ -1017,7 +1036,7 @@ div.tag-links a {
 	float: left;
 	font-size: 15px;
 	line-height: 20px;
-	padding-top: 20px;
+	padding-top: 14px;
 }
 #omg-ubuntu a {
 	color: #f15d22;
@@ -1025,12 +1044,12 @@ div.tag-links a {
 	font-size: 22px
 }
 #copyright {
-	background: url(images/ohso.png) no-repeat 0 bottom;
+	background-position: -159px -48px;
 	float: right;
 	color: #b8b8b8;
 	font-size: 11px;
 	line-height: 13px;
-	padding: 20px 0 0 169px;
+	padding: 13px 0 0 169px;
 }
 
 /* =Disqus stuff
@@ -1124,7 +1143,7 @@ p.dsq-widget-meta a:first-child {
 /* =Facebook mask
 -------------------------------------------------------------- */
 #facemask {
-	background: url("images/bigfacemaskempty.png");
+	background-position: 0 -100px;
 	height: 300px;
 	display: block;
 	position: relative;
