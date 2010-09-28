@@ -360,7 +360,7 @@ blockquote.right {
 }
 
 
-/* Root
+/* =Root
 -------------------------------------------------------------- */
 
 body {
@@ -379,7 +379,7 @@ body {
 	z-index: 1;
 }
 
-/* Sprites
+/* =Sprites
 -------------------------------------------------------------- */
 #searchsubmit, div.cat-links a, div.tag-links a, .nav-previous a, .nav-next a, #copyright, #facemask {
 	background: url(images/sprites.png) no-repeat;
@@ -529,10 +529,10 @@ body {
 	text-transform:uppercase;
 	text-shadow: 0px 1px 0px #fff;
 }
-#menu-item-2733 a {
+#menu-item-24 a {
 	color: #dd4814;
 }
-#menu-item-2733 a:hover {
+.menu-secondary-menu-container a:hover, #menu-item-24 a:hover {
 	color: #0091ab;
 }
 
@@ -1041,7 +1041,7 @@ div.tag-links a {
 #omg-ubuntu a {
 	color: #f15d22;
 	font-family: "Arial Black";
-	font-size: 22px
+	font-size: 22px;
 }
 #copyright {
 	background-position: -159px -48px;
@@ -1082,10 +1082,6 @@ li.dsq-widget-item:nth-child(odd) {
 	background-image: -webkit-gradient(linear, 0 0, 0% 100%, from(#FFF), to(#d1e7ed));
 	margin: 15px auto 0 0 !important;
 	border-color: #ebf3f5;
-}
-.dsq-widget-item a {
-	/**color: #4d1f41;**/
-	/**color: #f15d22;**/
 }
 .dsq-widget-item a:hover {
 	color: #08A8C5;
