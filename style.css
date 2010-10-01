@@ -373,7 +373,7 @@ body {
 	overflow: hidden;
 	background-color: #fff;
 	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
-	-moz-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+	-moz-box-shadow: 0 5px 18px rgba(0, 0, 0, 0.3);
 	-webkit-box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
 	position: relative;
 	z-index: 1;
