@@ -11,7 +11,6 @@
     ?></title>
 	
 	<meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
-	<!--<link href='http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold' rel='stylesheet' type='text/css'>-->
 	<link rel="stylesheet" type="text/css" href="<?php bloginfo('stylesheet_url'); ?>?e" />
 	<link rel="icon" type="image/x-icon" href="/wp-content/themes/omgubuntu/favicon.ico" />
 	
@@ -60,5 +59,5 @@
 			<ul class="xoxo">
 				<?php dynamic_sidebar('upper-widget-area'); ?>			  
 			</ul>
-		</div><!-- #secondary .widget-area -->
+		</div><!-- #upper .widget-area -->
 <?php endif; ?>
