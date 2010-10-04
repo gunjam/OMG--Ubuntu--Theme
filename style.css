@@ -887,6 +887,7 @@ div.tag-links a {
 	display: block;
 	padding: 5px 35px 5px 0;
 	font-family: "Ubuntu","UbuntuBeta","Arial",sans-serif;
+	color: #FF6500;
 }
 #most-read-posts a:hover {
 	color: #08a8c5 !important;
@@ -1078,12 +1079,12 @@ p.dsq-widget-meta a:first-child {
 	clear: both;
 	border: 1px solid #efefef;
 }
-.contact-field, .contact-submit, .contact-field input, .contact-field textarea, .contact-submit [type=text] {
+.contact-field, .contact-submit, .contact-field input, .contact-field textarea, .captcha-723 input {
 	border-radius: 5px 5px 5px 5px;
 	-moz-border-radius: 5px 5px 5px 5px;
 	-webkit-border-radius: 5px 5px 5px 5px;
 }
-.contact-field input, .contact-field textarea, .contact-submit [type=text] {
+.contact-field input, .contact-field textarea, .captcha-723 input {
 	box-shadow: 1px 1px 2px #D8D8D8 inset;
 	-moz-box-shadow: 1px 1px 2px #D8D8D8 inset;
 	-webkit-box-shadow: 1px 1px 2px #D8D8D8 inset;
@@ -1093,7 +1094,7 @@ p.dsq-widget-meta a:first-child {
 	float: right;
 	height: 17px;
 }
-.contact-field input:focus, .contact-submit [type=text]:focus, .contact-field textarea:focus {
+.contact-field input:focus, .captcha-723 input:focus, .contact-field textarea:focus {
 	border-color: #F15D22;
 }
 .contact-field textarea {
