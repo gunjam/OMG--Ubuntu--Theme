@@ -1,4 +1,7 @@
-<?php get_header(); ?>
+<?php header('HTTP/1.1 404 Not Found');
+$uri = strtolower($_SERVER['REQUEST_URI']);
+if(strstr($uri,'.')) { die(”); }
+get_header(); ?>
 		<div id="container">	
 			<div id="content">
 				
